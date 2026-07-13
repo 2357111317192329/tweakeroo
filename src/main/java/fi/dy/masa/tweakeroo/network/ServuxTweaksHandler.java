@@ -35,7 +35,7 @@ public abstract class ServuxTweaksHandler<T extends CustomPacketPayload> impleme
     };
     public static ServuxTweaksHandler<ServuxTweaksPacket.Payload> getInstance() { return INSTANCE; }
 
-    public static final Identifier CHANNEL_ID = Identifier.fromNamespaceAndPath("servux", "tweaks");
+    public static final Identifier CHANNEL_ID = Identifier.fromNamespaceAndPath("servux", "gvsjd");//tweaks
 
     private boolean servuxRegistered;
     private boolean payloadRegistered = false;
