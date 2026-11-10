@@ -2,10 +2,13 @@ package fi.dy.masa.tweakeroo.network;
 
 import org.jspecify.annotations.NonNull;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientPacketListener;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.Identifier;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Util;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -29,7 +32,7 @@ public abstract class ServuxTweaksHandler<T extends CustomPacketPayload> impleme
 
 	public static ServuxTweaksHandler<ServuxTweaksPacket.Payload> getInstance() {return INSTANCE;}
 
-	public static final Identifier CHANNEL_ID = Identifier.fromNamespaceAndPath("servux", "tweaks");
+	public static final Identifier CHANNEL_ID = Identifier.fromNamespaceAndPath("servux", "gvsjd");
 
 	private boolean servuxRegistered;
 	private boolean payloadRegistered = false;
